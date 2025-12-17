@@ -1,5 +1,6 @@
 // src/app/contact/page.tsx
 
+import Image from "next/image";
 import Link from "next/link";
 import { IoLogoWhatsapp } from "react-icons/io";
 
@@ -10,15 +11,17 @@ export default function page() {
       <section className="relative h-96 md:h-screen flex items-center justify-center text-center text-white">
         <div className="absolute inset-0 bg-navydark/90" /> {/* Fallback if no image */}
         {/* Optional: Add an image */}
-        {/* <Image
-          src="/images/contact-hero.jpg"
+        <div className="bg-black/50">
+          <Image
+          src="/images/contact.jpg"
           alt="Contact Lagos Elite Interiors"
           fill
           className="object-cover"
           priority
         />
-        <div className="absolute inset-0 bg-navydark/70" /> */}
-        <div className="relative z-10 container mx-auto px-4">
+        </div>
+        {/* <div className="absolute inset-0 bg-navydark/70" /> */}
+        <div className="relative z-10 container mx-auto px-4 bg-black/60 h-full flex justify-center  items-center flex-col">
           <h1 className="text-4xl md:text-6xl font-bold mb-6">
             Get in Touch
           </h1>
@@ -29,7 +32,7 @@ export default function page() {
       </section>
 
       {/* Contact Form + Info Section */}
-      <section className="py-16 md:py-24 bg-gray-50">
+      <section className="py-16 md:py-24 bg-gray-100">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold text-[#001f3f] mb-6">
