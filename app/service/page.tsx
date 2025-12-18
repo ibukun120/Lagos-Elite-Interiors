@@ -6,40 +6,64 @@ import Link from "next/link";
 export default function Page() {
   const services = [
     {
-      title: "Interior Design",
+      title: "POP Gypsum Board Design & Installation",
       description:
-        "Custom, bespoke interior designs that reflect your personality and lifestyle. From concept to 3D visualization, we create elegant, functional spaces tailored for luxury homes, estates, and premium offices.",
-      icon: "/images/icons/design.svg", // Replace with actual icon or use emoji
+        "Expert design and installation of POP and gypsum board features for ceilings, walls, and decorative elements. We create smooth, durable, and stylish finishes that elevate the look and feel of any space.",
+      icon: "/images/icons/pop.jpg",
     },
     {
-      title: "Full Home & Office Renovation",
+      title: "Ceiling Design & Finishing",
       description:
-        "Complete renovation services including flooring, ceiling work, painting, lighting, plumbing fixtures, and custom furniture installation. We handle everything with minimal disruption.",
-      icon: "/images/icons/renovation.svg",
+        "Modern ceiling solutions including POP ceilings, gypsum ceilings, and decorative ceiling designs. From simple elegance to bold architectural styles, we deliver flawless finishes with precise detailing.",
+      icon: "/images/icons/Ceiling.jpg",
     },
     {
-      title: "Space Planning & Optimization",
+      title: "Wall & Ceiling Screeding",
       description:
-        "Professional layout planning to maximize usability and flow. Ideal for open-plan homes, corporate offices, and church sanctuaries needing efficient yet beautiful arrangements.",
-      icon: "/images/icons/planning.svg",
+        "Professional wall and ceiling screeding services to achieve smooth, even surfaces ready for painting or finishing. Perfect for new builds, renovations, and interior upgrades.",
+      icon: "/images/icons/screeding.jpg",
     },
     {
-      title: "Custom Furniture & Joinery",
+      title: "Painting & Surface Finishes",
       description:
-        "Bespoke cabinetry, wardrobes, kitchen units, TV consoles, and wooden partitions crafted with premium materials and flawless finishing.",
-      icon: "/images/icons/furniture.svg",
+        "High-quality interior painting using premium paints and techniques. We offer clean, long-lasting finishes that enhance color depth, texture, and overall ambiance.",
+      icon: "/images/icons/painting.jpg",
     },
     {
       title: "Lighting Design & Installation",
       description:
-        "Strategic lighting solutions – ambient, task, and accent lighting using modern LED systems, chandeliers, and smart controls for dramatic and energy-efficient results.",
-      icon: "/images/icons/lighting.svg",
+        "Installation of modern lighting solutions including spotlights, LED strips, chandeliers, and concealed lighting. Our lighting designs enhance mood, depth, and functionality in every space.",
+      icon: "/images/icons/lighting.jpg",
     },
     {
-      title: "Church & Worship Space Interiors",
+      title: "TV Console & Wall Features",
       description:
-        "Specialized design and contracting for churches: pulpits, altars, pews, acoustic treatments, stained glass integration, and sanctuary transformations.",
-      icon: "/images/icons/church.svg",
+        "Custom TV consoles and entertainment wall designs incorporating gypsum, wood, lighting, and wall cladding for a sleek, modern, and functional living space.",
+      icon: "/images/icons/console.jpg",
+    },
+    {
+      title: "Partitions & Space Dividers",
+      description:
+        "Stylish partitions using gypsum board, glass, wood, or mixed materials to define spaces without compromising openness, lighting, or flow.",
+      icon: "/images/icons/partition.webp",
+    },
+    {
+      title: "Wall Cladding & Decorative Panels",
+      description:
+        "Installation of wall cladding and decorative panels to add texture, character, and luxury to feature walls in living rooms, offices, and commercial spaces.",
+      icon: "/images/icons/cladding.jpg",
+    },
+    {
+      title: "3D Wall Clock & Decorative Installations",
+      description:
+        "Creative installation of 3D wall clocks and custom wall décor pieces that serve as eye-catching focal points and enhance interior aesthetics.",
+      icon: "/images/icons/decor.webp",
+    },
+    {
+      title: "Custom Furniture & Interior Fittings",
+      description:
+        "Design and fabrication of custom furniture including wardrobes, cabinets, shelves, and storage units crafted to match your interior style and space requirements.",
+      icon: "/images/icons/furniture.jpg",
     },
   ];
 
@@ -60,7 +84,8 @@ export default function Page() {
             Our Professional Services
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto tracking-wider">
-            End-to-end interior contracting solutions for luxury homes, estates, offices, and churches in Lagos.
+            End-to-end interior contracting solutions for luxury homes, estates,
+            offices, and churches in Lagos.
           </p>
         </div>
       </section>
@@ -73,7 +98,8 @@ export default function Page() {
               What We Offer
             </h2>
             <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-              We deliver high-quality, professional interior solutions with attention to detail, timely execution, and premium materials.
+              We deliver high-quality, professional interior solutions with
+              attention to detail, timely execution, and premium materials.
             </p>
           </div>
 
@@ -85,8 +111,9 @@ export default function Page() {
               >
                 <div className="h-48 bg-navydark/10 flex items-center justify-center">
                   {/* Replace with actual SVG icons or use a placeholder image */}
-                  <div className="text-6xl">🏛️</div> {/* Temporary emoji placeholder */}
-                  {/* <Image src={service.icon} alt="" width={100} height={100} /> */}
+                  {/* <div className="text-6xl">🏛️</div>{" "} */}
+                  {/* Temporary emoji placeholder */}
+                  <Image src={service.icon} alt="" width={100} height={100} className="w-full h-52 object-cover"/>
                 </div>
                 <div className="p-8">
                   <h3 className="text-2xl font-semibold text-[#001f3f] mb-4 tracking-wide">
@@ -111,7 +138,10 @@ export default function Page() {
           <p className="text-xl mb-10 max-w-2xl mx-auto">
             Contact us today for a free consultation and quote.
           </p>
-          <Link href="/contact" className="px-12 py-3 rounded-full bg-blue-950 text-lg inline-block">
+          <Link
+            href="/contact"
+            className="px-12 py-3 rounded-full bg-blue-950 text-lg inline-block"
+          >
             Get Your Free Quote
           </Link>
         </div>

@@ -24,7 +24,7 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-10 py-8">
         <div className="flex justify-between items-center">
           <Link href="/" className="text-3xl font-bold tracking-wide">
-            Lagos Elite Interiors
+             Bright Basics Concept
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,7 +33,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={pathname === link.href? `hover:text-[#d4af37] text-gray-400 font-semibold transition` : 'hover:text-[#d4af37] font-semibold transition tracking-wider'}
+                className={pathname === link.href? `hover:text-[#d4af37] text-[#bc9208] font-semibold transition` : 'hover:text-[#d8ba56] font-semibold transition tracking-wider'}
               >
                 {link.name}
               </Link>

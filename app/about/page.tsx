@@ -5,7 +5,7 @@ export default function About() {
     <section className="py-20 container mx-auto px-4 bg-white flex gap-10 flex-col md:flex-row">
       {/* image div */}
       <div className="w-full md:w-1/2">
-        <Image src='/images/about-us.jpg' width={600} height={400} alt="About-Image" className="w-full h-auto md:h-[512px]"/>
+        <Image src='/images/about-us.jpg' width={600} height={400} alt="About-Image" className="w-full h-auto md:h-[600px]"/>
       </div>
       {/* text div */}
       <div className="w-full md:w-1/2">
@@ -14,16 +14,19 @@ export default function About() {
         </h1>
         <div className="max-w-4xl mx-auto text-lg space-y-6 text-[#001f3f]">
           <p>
-            We are a CAC-registered interior contracting company based in Lagos
-            with over 10 years of experience delivering luxury transformations.
+            BRIGHT BASICS CONCEPTS is a Lagos-based interior finishing and installation company specializing in high-quality residential and commercial projects.
           </p>
           <p>
-            Our team specializes in high-end residential estates, corporate
-            offices, and sacred spaces (churches).
+            With over 7 years of hands-on industry experience, we deliver excellence in POP installations, screeding, painting, lighting, wall cladding, partitions, and custom furniture.
           </p>
           <p>
-            We pride ourselves on professionalism, attention to detail, and
-            timely delivery.
+            Our company is fully registered with the Corporate Affairs Commission (CAC) and committed to professional standards, timely delivery, and premium workmanship.
+          </p>
+
+          <p>
+            BRIGHT BASICS CONCEPTS is a CAC-registered interior contracting company with over 7 years of experience delivering premium interior finishing for luxury homes, estates, offices, and worship centers across Lagos.
+
+
           </p>
         </div>
       </div>

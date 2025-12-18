@@ -19,7 +19,7 @@ export default function HomePage() {
           <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
             Crafting Luxury Spaces in Lagos
           </h1>
-          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto tracking-wider">
+          <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto tracking-wide">
             Professional interior contracting for luxury homes, estates, offices, and churches.
           </p>
           <Link href="/contact" className="px-10 py-3 bg-[#d4af37] rounded text-xl hover:bg-amber-400 transition duration-300">
