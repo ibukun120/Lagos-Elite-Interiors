@@ -29,7 +29,11 @@ const OurServices = () => {
 
   return (
     <>
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-white px-4 md:px-8">
+
+        <div>
+          <h1 className="text-5xl font-bold text-center mb-12 text-[#001f3f] tracking-wider">Our Services</h1>
+        </div>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-10">
                     {detail.map((service, index) => (
                       <div
@@ -55,7 +59,7 @@ const OurServices = () => {
                   </div>
 
                   <div className="mt-12 flex justify-center items-center">
-                    <Link href='/service' className="text-blue-800 text-xl font-semibold px-10 py-2.5 rounded border border-2 border-blue-800 hover:text-white hover:bg-blue-800 transition-all duration-300">See More</Link>
+                    <Link href='/service' className="text-blue-800 text-xl font-semibold px-10 py-2.5 rounded border-2 border-blue-800 hover:text-white hover:bg-blue-800 transition-all duration-300">See More</Link>
                   </div>
       </section>
     </>

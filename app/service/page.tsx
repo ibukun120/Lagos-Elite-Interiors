@@ -92,7 +92,7 @@ export default function Page() {
 
       {/* Services Grid */}
       <section className="py-16 md:py-24 bg-gray-50">
-        <div className="container mx-auto px-4">
+        <div className="container mx-auto px-4 md:px-8">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-5xl font-bold tracking-wider mb-6 text-[#001f3f]">
               What We Offer

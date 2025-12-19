@@ -6,7 +6,7 @@ export default function HomePage() {
   return (
     <>
       {/* Hero Section */}
-      <section className="relative h-screen flex items-center justify-center text-center text-white">
+      <section className="relative h-[512px] md:h-screen flex items-center justify-center text-center text-white">
         <Image
           src="/images/hero-luxury-living.jpg" // Place a high-quality image in public/images
           alt="Luxury interior living room"
