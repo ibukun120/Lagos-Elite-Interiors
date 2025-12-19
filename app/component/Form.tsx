@@ -24,20 +24,28 @@ export default function ContactSection() {
   } = useForm<FormValues>();
 
   const onSubmit = async (data: FormValues) => {
-// if (!response.ok) {
-//   throw new Error("Failed to submit");
-// }
+    // if (!response.ok) {
+    //   throw new Error("Failed to submit");
+    // }
 
     try {
-      await fetch("https://formspree.io/f/your-form-id", {
+      await fetch("https://formspree.io/f/mzdpzjbw", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
+          Accept: "application/json",
         },
         body: JSON.stringify(data),
-        
       });
-console.log(data)
+      console.log(data);
+
+// if (!response.ok) {
+//   const errorData = await response.json();
+//   throw new Error(errorData?.error || "Failed to submit");
+// }
+
+      
+
       reset();
       alert("Message sent successfully!");
     } catch (error) {
@@ -53,8 +61,8 @@ console.log(data)
             Start Your Project Today
           </h2>
           <p className="text-lg md:text-xl text-gray-700 max-w-3xl mx-auto">
-            Fill out the form below and we’ll get back to you within 24 hours with
-            a free consultation.
+            Fill out the form below and we’ll get back to you within 24 hours
+            with a free consultation.
           </p>
         </div>
 
@@ -131,7 +139,7 @@ console.log(data)
                 <input
                   {...register("location")}
                   className="w-full px-4 py-3 border rounded-lg"
-                  placeholder="Lekki Phase 1"
+                  placeholder="Your Location"
                 />
               </div>
 
@@ -158,7 +166,7 @@ console.log(data)
               <button
                 type="submit"
                 disabled={isSubmitting}
-                className="w-full bg-blue-200 text-[#001f3f] py-4 text-lg font-semibold disabled:opacity-50"
+                className="w-full bg-blue-200 cursor-pointer hover:bg-blue-300 text-[#001f3f] py-4 text-lg font-semibold disabled:opacity-50"
               >
                 {isSubmitting ? "Sending..." : "Send Message"}
               </button>
@@ -179,23 +187,23 @@ console.log(data)
             <div className="space-y-6 text-lg">
               <div className="flex items-center gap-4">
                 {/* 📧 */}
-                <MdEmail size={25}/>
+                <MdEmail size={25} />
                 <p
                   // href=":brightbasicsenterprises@gmail.com"
                   className="text-gold hover:underline"
                 >
-                  Email:brightbasicsenterprises@gmail.com
+                  Email: brightbasicsenterprises@gmail.com
                 </p>
               </div>
 
               <div className="flex items-center gap-4">
                 {/* 📞 */}
-                <BiMobile size={25}/>
+                <BiMobile size={25} />
                 <Link
                   href="tel:+2349063846519"
                   className="text-gold hover:underline"
                 >
-                  Tel:09063846519/08072478674 
+                  Tel: 09063846519 / 08072478674
                 </Link>
               </div>
 
