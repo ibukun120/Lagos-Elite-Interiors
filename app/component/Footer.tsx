@@ -10,12 +10,13 @@ export default function Footer() {
             Transforming luxury homes, estates, offices, and churches across
             Lagos.
           </p>
+          <p className="text-2xl font-bold">RC 8774682.</p>
         </div>
         <div className="space-y-2 mb-8">
           <p>📧 brightbasicsenterprises@gmail.com</p>
           <p>📞 +234 9063846519/08072478674</p>
           <p>📱 WhatsApp: +234 9063846519</p>
-          <p className="mt-4">Serving: Lekki • Ikeja • Ikorodu</p>
+          <p className="mt-4">Serving: Nationwide.</p>
         </div>
         <p className="text-sm">
           &copy; {new Date().getFullYear()} Bright Basics Concept. All rights

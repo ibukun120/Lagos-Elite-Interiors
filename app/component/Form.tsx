@@ -29,7 +29,7 @@ export default function ContactSection() {
     // }
 
     try {
-      await fetch("https://formspree.io/f/mzdpzjbw", {
+      await fetch("https://formspree.io/f/xlgrdzno", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -39,12 +39,10 @@ export default function ContactSection() {
       });
       console.log(data);
 
-// if (!response.ok) {
-//   const errorData = await response.json();
-//   throw new Error(errorData?.error || "Failed to submit");
-// }
-
-      
+      // if (!response.ok) {
+      //   const errorData = await response.json();
+      //   throw new Error(errorData?.error || "Failed to submit");
+      // }
 
       reset();
       alert("Message sent successfully!");

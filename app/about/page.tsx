@@ -28,6 +28,9 @@ export default function About() {
 
 
           </p>
+          <p className="text-xl">
+            RC 8774682
+          </p>
         </div>
       </div>
     </section>

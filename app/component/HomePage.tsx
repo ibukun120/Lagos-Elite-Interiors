@@ -16,13 +16,23 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
-            Crafting Luxury Spaces in Lagos
+          <h1 className="hidden md:block text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Crafting Luxury Spaces <br />
+            <span>Across Nigeria</span>
+          </h1>
+
+          <h1 className="md:hidden text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Crafting Luxury Spaces
+            <span>Across Nigeria</span>
           </h1>
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto tracking-wide">
-            Professional interior contracting for luxury homes, estates, offices, and churches.
+            Professional interior contracting for luxury homes, estates,
+            offices, and churches.
           </p>
-          <Link href="/contact" className="px-10 py-3 bg-[#d4af37] rounded text-xl hover:bg-amber-400 transition duration-300">
+          <Link
+            href="/contact"
+            className="px-10 py-3 bg-[#d4af37] rounded text-xl hover:bg-amber-400 transition duration-300"
+          >
             Get a Free Quote
           </Link>
         </div>
@@ -48,7 +58,7 @@ export default function HomePage() {
           </div>
         </div>
       </section> */}
-      <OurServices/>
+      <OurServices />
     </>
   );
 }
