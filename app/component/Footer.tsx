@@ -7,8 +7,7 @@ export default function Footer() {
         <div>
           <p className="text-2xl font-bold mb-4">Bright Basics Concept</p>
           <p className="mb-6">
-            Transforming luxury homes, estates, offices, and churches across
-            Lagos.
+            Transforming luxury homes, estates, offices, and churches Nationwide.
           </p>
           <p className="text-2xl font-bold">RC 8774682.</p>
         </div>
