@@ -80,12 +80,13 @@ export default function Page() {
         />
         <div className="absolute inset-0 bg-black/60" />
         <div className="relative z-10 container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wide">
-            Our Professional Services
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Transforming Homes <br />
+            <span>Across Nigeria</span>
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto tracking-wider">
             End-to-end interior contracting solutions for luxury homes, estates,
-            offices, and churches in Lagos.
+            offices, and churches Nationwide.
           </p>
         </div>
       </section>

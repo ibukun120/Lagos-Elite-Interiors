@@ -16,18 +16,18 @@ export default function HomePage() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 container mx-auto px-4">
-          <h1 className="hidden md:block text-4xl md:text-6xl font-bold mb-6 tracking-wider">
-            Crafting Luxury Spaces <br />
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Transforming Homes <br />
             <span>Across Nigeria</span>
           </h1>
 
-          <h1 className="md:hidden text-4xl md:text-6xl font-bold mb-6 tracking-wider">
-            Crafting Luxury Spaces
+          {/* <h1 className="md:hidden text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Crafting Luxury Spaces {""}
             <span>Across Nigeria</span>
-          </h1>
+          </h1> */}
           <p className="text-xl md:text-2xl mb-10 max-w-3xl mx-auto tracking-wide">
             Professional interior contracting for luxury homes, estates,
-            offices, and churches.
+            offices, and churches Nationwide.
           </p>
           <Link
             href="/contact"

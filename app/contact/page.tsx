@@ -23,11 +23,12 @@ export default function page() {
         </div>
         {/* <div className="absolute inset-0 bg-navydark/70" /> */}
         <div className="relative z-10 container mx-auto px-4 bg-black/60 h-full flex justify-center  items-center flex-col">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">
-            Get in Touch
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Transforming Homes <br />
+            <span>Across Nigeria</span>
           </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
-            Let’s discuss your project. We serve Lekki, Ikeja, Ikorodu, and all of Lagos.
+            Let’s discuss your project. We serve Nationwide.
           </p>
         </div>
       </section>

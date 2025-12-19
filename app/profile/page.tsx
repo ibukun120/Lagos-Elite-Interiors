@@ -69,10 +69,13 @@ export default function Page() {
         />
         <div className="absolute inset-0 bg-black/30" />
         <div className="relative z-10 container mx-auto px-4">
-          <h1 className="text-4xl md:text-6xl font-bold mb-6">Our Portfolio</h1>
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 tracking-wider">
+            Transforming Homes <br />
+            <span>Across Nigeria</span>
+          </h1>
           <p className="text-xl md:text-2xl max-w-3xl mx-auto">
             Explore our completed projects across luxury homes, offices,
-            estates, and churches in Lagos.
+            estates, and churches Nationwide.
           </p>
         </div>
       </section>
