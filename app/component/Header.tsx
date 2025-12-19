@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState } from "react";
 import MobileMenu from "./MobileMenu";
 import { usePathname } from "next/navigation";
+import Image from "next/image";
 // import MobileMenu from "./MobileMenu";
 
 export default function Header() {
@@ -15,16 +16,17 @@ export default function Header() {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/service" },
     { name: "Portfolio", href: "/profile" },
-    // { name: "Testimonials", href: "/testimonials" },
+    { name: "Gallery", href: "/gallery" },
     { name: "Contact", href: "/contact" },
   ];
 
   return (
     <header className="bg-[#001f3f] text-white sticky top-0 z-50 shadow-md">
-      <div className="container mx-auto px-4 md:px-10 py-8">
+      <div className="container mx-auto px-4 md:px-10 py-4">
         <div className="flex justify-between items-center">
-          <Link href="/" className="text-3xl font-bold tracking-wide">
-             Bright Basics Concept
+          <Link href="/" className="font-bold">
+             <h1 className="tracking-widest text-5xl">Bright</h1> 
+             <h1 className="text-xl tracking-wider mt-1.5">Basics Concept</h1>
           </Link>
 
           {/* Desktop Navigation */}
@@ -33,7 +35,7 @@ export default function Header() {
               <Link
                 key={link.name}
                 href={link.href}
-                className={pathname === link.href? `hover:text-[#d4af37] text-[#bc9208] font-semibold transition` : 'hover:text-[#d8ba56] font-semibold transition tracking-wider'}
+                className={pathname === link.href? `hover:text-[#d4af37] text-[#bc9208] font-semibold text-sm transition` : 'hover:text-[#d8ba56] text-sm font-semibold transition tracking-wider'}
               >
                 {link.name}
               </Link>
@@ -43,7 +45,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-3xl"
+            className="md:hidden text-2xl"
             aria-label="Toggle menu"
           >
             ☰

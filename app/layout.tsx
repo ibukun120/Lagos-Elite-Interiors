@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Lagos Elite Interiors - Luxury Interior Contracting in Lagos",
+  title: "Bright Basics Concept",
   description:
     "Professional interior design and contracting services for luxury homes, estates, offices, and churches in Lekki, Ikeja, and Ikorodu.",
   keywords:
