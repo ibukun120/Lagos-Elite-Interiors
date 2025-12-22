@@ -25,8 +25,9 @@ export default function Header() {
       <div className="container mx-auto px-4 md:px-10 py-4">
         <div className="flex justify-between items-center">
           <Link href="/" className="font-bold">
-             <h1 className="tracking-widest text-5xl">Bright</h1> 
-             <h1 className="text-xl tracking-wider mt-1.5">Basics Concept</h1>
+             {/* <h1 className="tracking-widest text-5xl">Bright</h1> 
+             <h1 className="text-xl tracking-wider mt-1.5">Basics Concept</h1> */}
+             <Image src="/images/favicon.io.jpeg" width={80} height={80} alt="logo"/>
           </Link>
 
           {/* Desktop Navigation */}
@@ -45,7 +46,7 @@ export default function Header() {
           {/* Mobile Menu Button */}
           <button
             onClick={() => setIsOpen(!isOpen)}
-            className="md:hidden text-2xl"
+            className="md:hidden text-4xl"
             aria-label="Toggle menu"
           >
             ☰
